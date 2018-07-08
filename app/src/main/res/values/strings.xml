@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2018 Zhang Hai <Dreaming.in.Code.ZH@Gmail.com>
+  ~ All Rights Reserved.
+  -->
+
+<resources>
+
+    <!-- android.R.string.app_not_found -->
+    <string name="activity_not_found">No application found to handle this action</string>
+
+    <string name="app_name">TextSelectionWebSearch</string>
+
+    <string name="web_search_title">Web Search</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_search_engine_title">Search Engine</string>
+    <string name="settings_search_engine_summary">%1$s</string>
+    <string-array name="settings_search_engine_entries">
+        <item>Google</item>
+        <item>Bing</item>
+        <item>DuckDuckGo</item>
+        <item>Baidu</item>
+        <item>Sogou</item>
+        <item>360</item>
+    </string-array>
+    <string name="settings_use_custom_tabs_title">Use CustomTabs</string>
+    <string name="settings_use_custom_tabs_summary">Allows a more seamless experience</string>
+    <string name="settings_open_url_title">Open URL</string>
+    <string name="settings_open_url_summary">If search text is a URL, it will be opened directly</string>
+</resources>

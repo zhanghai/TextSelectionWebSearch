@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2018 Zhang Hai <Dreaming.in.Code.ZH@Gmail.com>
+  ~ All Rights Reserved.
+  -->
+
+<resources>
+    <string-array name="search_engine_url_formats">
+        <item>https://www.google.com/search?q=%s</item>
+        <item>https://www.bing.com/search?q=%s</item>
+        <item>https://duckduckgo.com/?q=%s</item>
+        <item>https://www.baidu.com/s?wd=%s</item>
+        <item>https://www.sogou.com/web?query=%s</item>
+        <item>https://www.so.com/s?q=%s"</item>
+    </string-array>
+</resources>

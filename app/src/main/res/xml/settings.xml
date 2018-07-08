@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2018 Zhang Hai <Dreaming.in.Code.ZH@Gmail.com>
+  ~ All Rights Reserved.
+  -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="@string/pref_key_search_engine"
+        android:title="@string/settings_search_engine_title"
+        android:defaultValue="@string/pref_default_value_search_engine"
+        android:entries="@array/settings_search_engine_entries"
+        android:entryValues="@array/pref_entry_values_search_engine"
+        android:summary="@string/settings_search_engine_summary" />
+
+    <SwitchPreference
+        android:key="@string/pref_key_use_custom_tabs"
+        android:title="@string/settings_use_custom_tabs_title"
+        android:defaultValue="@bool/pref_default_value_use_custom_tabs"
+        android:summary="@string/settings_use_custom_tabs_summary" />
+
+    <SwitchPreference
+        android:key="@string/pref_key_open_url"
+        android:title="@string/settings_open_url_title"
+        android:defaultValue="@bool/pref_default_value_open_url"
+        android:summary="@string/settings_open_url_summary" />
+</PreferenceScreen>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2018 Zhang Hai <Dreaming.in.Code.ZH@Gmail.com>
+  ~ All Rights Reserved.
+  -->
+
+<resources>
+    <string name="pref_key_search_engine">key_search_engine</string>
+    <string name="pref_default_value_search_engine">0</string>
+    <string-array name="pref_entry_values_search_engine">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string name="pref_key_use_custom_tabs">key_use_custom_tabs</string>
+    <bool name="pref_default_value_use_custom_tabs">true</bool>
+    <string name="pref_key_open_url">key_open_url</string>
+    <bool name="pref_default_value_open_url">true</bool>
+</resources>
