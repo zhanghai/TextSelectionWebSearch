@@ -38,6 +38,11 @@ public class WebSearchActivity extends Activity {
                     query = text != null ? text.toString() : null;
                     break;
                 }
+                case Intent.ACTION_SEND: {
+                    CharSequence text = intent.getCharSequenceExtra(Intent.EXTRA_TEXT);
+                    query = text != null ? text.toString() : null;
+                    break;
+                }
                 case Intent.ACTION_WEB_SEARCH: {
                     query = intent.getStringExtra(SearchManager.QUERY);
                     break;
