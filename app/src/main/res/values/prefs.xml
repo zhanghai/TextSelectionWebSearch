@@ -5,7 +5,9 @@
   ~ All Rights Reserved.
   -->
 
-<resources>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
     <string name="pref_key_search_engine">key_search_engine</string>
     <string name="pref_default_value_search_engine">0</string>
     <string-array name="pref_entry_values_search_engine">
