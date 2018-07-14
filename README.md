@@ -1,5 +1,7 @@
 # TextSelectionWebSearch
 
+![](app/src/main/launcher_icon-web.png)
+
 This small app can add an "web search" action to the text selection toolbar on Android.
 
 Text selection toolbar requires Android Marshmallow or above, so this app requires it as well.
