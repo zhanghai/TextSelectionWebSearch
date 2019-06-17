@@ -7,8 +7,8 @@
 
 <resources>
     <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar">
-        <item name="android:colorPrimary">@color/indigo_500</item>
-        <item name="android:colorPrimaryDark">@color/indigo_700</item>
+        <item name="android:colorPrimary">@color/blue_500</item>
+        <item name="android:colorPrimaryDark">@color/blue_700</item>
         <item name="android:colorAccent">@color/pink_a200</item>
     </style>
     <style name="AppTheme.NoDisplay" parent="android:Theme.NoDisplay">

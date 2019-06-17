@@ -7,7 +7,7 @@
 
 <resources>
     <color name="grey_100">#F5F5F5</color>
-    <color name="indigo_500">#3F51B5</color>
-    <color name="indigo_700">#303F9F</color>
+    <color name="blue_500">#2196F3</color>
+    <color name="blue_700">#1976D2</color>
     <color name="pink_a200">#FF4081</color>
 </resources>
