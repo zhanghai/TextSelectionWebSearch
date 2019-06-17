@@ -1,4 +1,4 @@
-# Select Text & Search
+# Select Text to Search
 
 ![](app/src/main/launcher_icon-web.png)
 

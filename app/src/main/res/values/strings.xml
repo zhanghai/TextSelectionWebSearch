@@ -10,7 +10,7 @@
     <!-- android.R.string.app_not_found -->
     <string name="activity_not_found">No application found to handle this action</string>
 
-    <string name="app_name">Select Text &amp; Search</string>
+    <string name="app_name">Select Text to Search</string>
 
     <string name="web_search_title">Web Search</string>
 
