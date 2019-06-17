@@ -10,7 +10,7 @@
     <!-- android.R.string.app_not_found -->
     <string name="activity_not_found">找不到可处理此操作的应用</string>
 
-    <string name="app_name">文本选择网页搜索</string>
+    <string name="app_name">文本选择搜索</string>
 
     <string name="web_search_title">网页搜索</string>
 
