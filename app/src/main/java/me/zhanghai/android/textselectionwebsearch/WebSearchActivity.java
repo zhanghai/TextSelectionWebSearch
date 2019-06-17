@@ -20,6 +20,7 @@ import android.text.TextUtils;
 import android.webkit.URLUtil;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.browser.customtabs.CustomTabsIntent;
 
@@ -56,7 +57,7 @@ public class WebSearchActivity extends Activity {
         finish();
     }
 
-    private void webSearch(String query) {
+    private void webSearch(@NonNull String query) {
         if (URLUtil.isNetworkUrl(query) && shouldOpenUrl()) {
             openUrl(query);
             return;
@@ -71,6 +72,7 @@ public class WebSearchActivity extends Activity {
                         R.bool.pref_default_value_open_url));
     }
 
+    @NonNull
     private String getSearchEngineUrlFormat() {
         String[] urlFormats = getResources().getStringArray(R.array.search_engine_url_formats);
         int index = Integer.parseInt(PreferenceManager.getDefaultSharedPreferences(this).getString(
@@ -79,7 +81,7 @@ public class WebSearchActivity extends Activity {
         return urlFormats[index];
     }
 
-    private void openUrl(String url) {
+    private void openUrl(@NonNull String url) {
         Bitmap settingsIcon = getSettingsIcon();
         String settingsDescription = getString(R.string.settings_title);
         PendingIntent settingsPendingIntent = PendingIntent.getActivity(this,
@@ -108,6 +110,7 @@ public class WebSearchActivity extends Activity {
         }
     }
 
+    @NonNull
     private Bitmap getSettingsIcon() {
         Drawable drawable = getDrawable(R.drawable.settings_icon);
         Bitmap bitmap = Bitmap.createBitmap(drawable.getIntrinsicWidth(),
