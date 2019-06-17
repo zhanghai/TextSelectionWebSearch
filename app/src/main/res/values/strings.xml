@@ -15,7 +15,7 @@
     <string name="web_search_title">Web Search</string>
 
     <string name="settings_title">Settings</string>
-    <string name="settings_search_engine_title">Search Engine</string>
+    <string name="settings_search_engine_title">Search engine</string>
     <string name="settings_search_engine_summary">%1$s</string>
     <string-array name="settings_search_engine_entries">
         <item>Google</item>
