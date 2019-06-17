@@ -25,7 +25,7 @@
         <item>搜狗</item>
         <item>360</item>
     </string-array>
-    <string name="settings_use_custom_tabs_title">使用 CustomTabs</string>
+    <string name="settings_use_custom_tabs_title">使用 Custom Tabs</string>
     <string name="settings_use_custom_tabs_summary">可使体验更加流畅</string>
     <string name="settings_open_url_title">打开网页链接</string>
     <string name="settings_open_url_summary">如果搜索文本是一个网页链接，它将被直接打开</string>
