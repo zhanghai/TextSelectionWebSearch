@@ -4,7 +4,7 @@
 
 This tiny app can add a "Web search" action to the text selection toolbar on Android.
 
-It also adds a "Web search" as target for sharing text. The default search engine can be configured in the settings page, openable in Custom Tabs toolbar, or the App info page for this app in system Settings.
+It also adds a "Web search" as target for sharing text. The default search engine can be configured in its settings page, openable in Custom Tabs toolbar, or the App info page for this app in system Settings.
 
 Text selection toolbar requires Android Marshmallow or above, so this app requires it as well.
 
