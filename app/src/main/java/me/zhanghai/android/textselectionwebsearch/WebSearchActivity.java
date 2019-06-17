@@ -16,11 +16,12 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.annotation.Nullable;
-import android.support.customtabs.CustomTabsIntent;
 import android.text.TextUtils;
 import android.webkit.URLUtil;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.browser.customtabs.CustomTabsIntent;
 
 public class WebSearchActivity extends Activity {
 

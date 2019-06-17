@@ -7,7 +7,8 @@ package me.zhanghai.android.textselectionwebsearch;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
-import android.support.annotation.Nullable;
+
+import androidx.annotation.Nullable;
 
 public class SettingsActivity extends PreferenceActivity {
 
