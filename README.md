@@ -6,7 +6,7 @@ It also adds a "Web search" as target for sharing text. The default search engin
 
 Text selection toolbar requires Android Marshmallow or above, so this app requires it as well.
 
-Download: [Google Play](https://play.google.com/store/apps/details?id=me.zhanghai.android.textselectionwebsearch), [Coolapk](https://www.coolapk.com/apk/me.zhanghai.android.textselectionwebsearch), [APK](https://github.com/zhanghai/TextSelectionWebSearch/releases/download/v1.0.1/app-release.apk)
+Download: [Google Play](https://play.google.com/store/apps/details?id=me.zhanghai.android.textselectionwebsearch), [Coolapk](https://www.coolapk.com/apk/me.zhanghai.android.textselectionwebsearch), [APK](https://github.com/zhanghai/TextSelectionWebSearch/releases/download/v1.0.2/app-release.apk)
 
 ## Preview
 
