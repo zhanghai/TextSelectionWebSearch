@@ -6,7 +6,7 @@
   -->
 
 <resources>
-    <string-array name="search_engine_url_formats">
+    <string-array name="config_search_engine_url_formats">
         <item>https://www.google.com/search?q=%s</item>
         <item>https://www.bing.com/search?q=%s</item>
         <item>https://duckduckgo.com/?q=%s</item>

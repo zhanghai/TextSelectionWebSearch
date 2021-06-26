@@ -75,7 +75,7 @@ public class WebSearchActivity extends Activity {
     @NonNull
     private String getSearchEngineUrlFormat() {
         final String[] urlFormats = getResources().getStringArray(
-                R.array.search_engine_url_formats);
+                R.array.config_search_engine_url_formats);
         final int index = Integer.parseInt(PreferenceManager.getDefaultSharedPreferences(this)
                 .getString(getString(R.string.pref_key_search_engine), getString(
                         R.string.pref_default_value_search_engine)));
