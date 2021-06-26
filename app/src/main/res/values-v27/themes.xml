@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2021 Hai Zhang <dreaming.in.code.zh@gmail.com>
+  ~ All Rights Reserved.
+  -->
+
+<resources>
+
+    <style name="Platform.V27.Theme.App" parent="Platform.V23.Theme.App">
+        <item name="android:navigationBarColor">?android:colorPrimaryDark</item>
+        <item name="android:windowLightNavigationBar">?android:isLightTheme</item>
+    </style>
+    <style name="Platform.Theme.App" parent="Platform.V27.Theme.App" />
+</resources>

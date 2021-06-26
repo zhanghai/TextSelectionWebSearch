@@ -10,13 +10,16 @@ import android.preference.PreferenceActivity;
 
 import androidx.annotation.Nullable;
 
+@SuppressWarnings("deprecation")
 public class SettingsActivity extends PreferenceActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //noinspection deprecation
         addPreferencesFromResource(R.xml.settings);
+
+        // android.R.attr.preferenceListStyle isn't a public API.
+        getListView().setDivider(null);
     }
 }
