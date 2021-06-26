@@ -31,8 +31,8 @@ public class WebSearchActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         String query = null;
-        Intent intent = getIntent();
-        String action = intent.getAction();
+        final Intent intent = getIntent();
+        final String action = intent.getAction();
         if (action != null) {
             switch (action) {
                 case Intent.ACTION_PROCESS_TEXT: {
@@ -62,7 +62,7 @@ public class WebSearchActivity extends Activity {
             openUrl(query);
             return;
         }
-        String url = String.format(getSearchEngineUrlFormat(), Uri.encode(query));
+        final String url = String.format(getSearchEngineUrlFormat(), Uri.encode(query));
         openUrl(url);
     }
 
@@ -74,34 +74,31 @@ public class WebSearchActivity extends Activity {
 
     @NonNull
     private String getSearchEngineUrlFormat() {
-        String[] urlFormats = getResources().getStringArray(R.array.search_engine_url_formats);
-        int index = Integer.parseInt(PreferenceManager.getDefaultSharedPreferences(this).getString(
-                getString(R.string.pref_key_search_engine), getString(
+        final String[] urlFormats = getResources().getStringArray(
+                R.array.search_engine_url_formats);
+        final int index = Integer.parseInt(PreferenceManager.getDefaultSharedPreferences(this)
+                .getString(getString(R.string.pref_key_search_engine), getString(
                         R.string.pref_default_value_search_engine)));
         return urlFormats[index];
     }
 
     private void openUrl(@NonNull String url) {
-        Bitmap settingsIcon = getSettingsIcon();
-        String settingsDescription = getString(R.string.settings_title);
-        PendingIntent settingsPendingIntent = PendingIntent.getActivity(this,
+        final Bitmap settingsIcon = getSettingsIcon();
+        final String settingsDescription = getString(R.string.settings_title);
+        final PendingIntent settingsPendingIntent = PendingIntent.getActivity(this,
                 SettingsActivity.class.hashCode(), new Intent(this, SettingsActivity.class),
                 PendingIntent.FLAG_UPDATE_CURRENT);
-        int toolbarColor = getColor(R.color.grey_100);
-        //noinspection deprecation
-        CustomTabsIntent intent = new CustomTabsIntent.Builder()
-                .addDefaultShareMenuItem()
-                .addToolbarItem(CustomTabsIntent.TOOLBAR_ACTION_BUTTON_ID, settingsIcon,
-                        settingsDescription, settingsPendingIntent)
-                .enableUrlBarHiding()
-                .setToolbarColor(toolbarColor)
-                .setSecondaryToolbarColor(toolbarColor)
+        final CustomTabsIntent intent = new CustomTabsIntent.Builder()
+                .setActionButton(settingsIcon, settingsDescription, settingsPendingIntent, true)
+                .setColorScheme(CustomTabsIntent.COLOR_SCHEME_SYSTEM)
+                .setShareState(CustomTabsIntent.SHARE_STATE_ON)
                 .setShowTitle(true)
+                .setUrlBarHidingEnabled(true)
                 .build();
         if (!shouldUseCustomTabs()) {
             CustomTabsIntent.setAlwaysUseBrowserUI(intent.intent);
         }
-        Uri uri = Uri.parse(url);
+        final Uri uri = Uri.parse(url);
         try {
             intent.launchUrl(this, uri);
         } catch (ActivityNotFoundException e) {
@@ -112,10 +109,10 @@ public class WebSearchActivity extends Activity {
 
     @NonNull
     private Bitmap getSettingsIcon() {
-        Drawable drawable = getDrawable(R.drawable.settings_icon);
-        Bitmap bitmap = Bitmap.createBitmap(drawable.getIntrinsicWidth(),
+        final Drawable drawable = getDrawable(R.drawable.settings_icon);
+        final Bitmap bitmap = Bitmap.createBitmap(drawable.getIntrinsicWidth(),
                 drawable.getIntrinsicHeight(), Bitmap.Config.ARGB_8888);
-        Canvas canvas = new Canvas(bitmap);
+        final Canvas canvas = new Canvas(bitmap);
         drawable.setBounds(0, 0, canvas.getWidth(), canvas.getHeight());
         drawable.draw(canvas);
         return bitmap;
