@@ -5,9 +5,7 @@
   ~ All Rights Reserved.
   -->
 
-<resources
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:ignore="MissingTranslation">
+<resources>
     <string-array name="search_engine_url_formats">
         <item>https://www.google.com/search?q=%s</item>
         <item>https://www.bing.com/search?q=%s</item>
