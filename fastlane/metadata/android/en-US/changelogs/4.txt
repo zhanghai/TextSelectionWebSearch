@@ -1,3 +1,3 @@
 - Added Yahoo! and Yandex as selectable search engines.
 - Added custom search engine.
-- Updated Settings UI theme.
+- Updated Settings page theme.
