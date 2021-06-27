@@ -10,7 +10,7 @@ Download: [Google Play](https://play.google.com/store/apps/details?id=me.zhangha
 
 ## Preview
 
-<p><img src="screenshots/en-US/text-selection-toolbar.png" width="32%" /> <img src="screenshots/en-US/settings.png" width="32%" /> <img src="screenshots/en-US/settings-search-engine.png" width="32%" /></p>
+<p><img src="fastlane/metadata/android/en-US/images/phoneScreenshots/1.png" width="32%" /> <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/2.png" width="32%" /> <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/3.png" width="32%" /></p>
 
 ## License
 
