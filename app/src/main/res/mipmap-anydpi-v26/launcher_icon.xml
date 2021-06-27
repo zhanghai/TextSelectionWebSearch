@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2021 Hai Zhang <dreaming.in.code.zh@gmail.com>
+  ~ All Rights Reserved.
+  -->
+
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background>
+        <color android:color="#1A73E8" />
+    </background>
+    <foreground android:drawable="@mipmap/launcher_icon_foreground" />
+</adaptive-icon>
