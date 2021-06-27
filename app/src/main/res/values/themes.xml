@@ -7,12 +7,14 @@
 
 <resources>
 
-    <style name="Theme.DeviceDefault.DayNight" parent="android:Theme.DeviceDefault.Light" />
+    <style name="Theme.DeviceDefault.DayNight" parent="android:Theme.DeviceDefault.Light">
+        <item name="isLightTheme">true</item>
+    </style>
 
     <style name="Platform.V23.Theme.App" parent="Theme.DeviceDefault.DayNight">
         <item name="android:colorPrimary">?android:colorBackground</item>
         <item name="android:colorPrimaryDark">?android:colorPrimary</item>
-        <item name="android:windowLightStatusBar">?android:isLightTheme</item>
+        <item name="android:windowLightStatusBar">?isLightTheme</item>
     </style>
     <style name="Platform.Theme.App" parent="Platform.V23.Theme.App" />
     <style name="Base.Theme.App" parent="Platform.Theme.App" />

@@ -6,8 +6,5 @@
   -->
 
 <resources>
-
-    <style name="Theme.DeviceDefault.DayNight" parent="android:Theme.DeviceDefault">
-        <item name="isLightTheme">false</item>
-    </style>
+    <attr name="isLightTheme" format="boolean" />
 </resources>
