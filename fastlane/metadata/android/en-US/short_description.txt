@@ -1,0 +1,1 @@
+Add a "Web search" action to the text selection toolbar

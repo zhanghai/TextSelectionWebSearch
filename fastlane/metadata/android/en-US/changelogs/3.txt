@@ -1,0 +1,1 @@
+- Fixed "Web search" case in English.

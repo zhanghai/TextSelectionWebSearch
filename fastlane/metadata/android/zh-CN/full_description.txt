@@ -1,0 +1,7 @@
+这个小应用可以为 Android 上的文本选择工具栏添加一个“网页搜索”动作。
+
+它同时也会将“网页搜索”添加为一个分享文本的目标应用。默认搜索引擎可以在应用设置页面中配置；您可以通过 Custom Tabs 的工具栏或者系统设置应用中本应用的信息页面打开应用设置。
+
+文本选择工具栏需要 Android Marshmallow 或以上版本，因此本应用有着同样的要求。
+
+https://github.com/zhanghai/TextSelectionWebSearch
