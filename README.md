@@ -14,7 +14,7 @@ Text selection toolbar requires Android 6.0 or above, so this app requires it as
 
 [<img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="240">](https://play.google.com/store/apps/details?id=me.zhanghai.android.textselectionwebsearch)
 
-[Get the APK](https://github.com/zhanghai/TextSelectionWebSearch/releases/latest/download/app-release.apk)
+[Get it on Coolapk](https://www.coolapk.com/apk/me.zhanghai.android.textselectionwebsearch) [Get the APK](https://github.com/zhanghai/TextSelectionWebSearch/releases/latest/download/app-release.apk)
 
 ## Preview
 
