@@ -9,7 +9,9 @@ import android.app.Activity;
 import android.app.PendingIntent;
 import android.app.SearchManager;
 import android.content.ActivityNotFoundException;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
@@ -67,17 +69,27 @@ public class WebSearchActivity extends Activity {
     }
 
     private boolean shouldOpenUrl() {
-        return PreferenceManager.getDefaultSharedPreferences(this).getBoolean(
-                getString(R.string.pref_key_open_url), getResources().getBoolean(
-                        R.bool.pref_default_value_open_url));
+        return getSharedPreferences().getBoolean(getString(R.string.pref_key_open_url),
+                getResources().getBoolean(R.bool.pref_default_value_open_url));
     }
 
     @NonNull
     private String getSearchEngineUrlFormat() {
-        final String[] urlFormats = getResources().getStringArray(
+        String urlFormat = getSearchEngineUrlFormat(this);
+        if (TextUtils.isEmpty(urlFormat)) {
+            urlFormat = getSharedPreferences().getString(getString(
+                    R.string.pref_key_custom_search_engine_url_format), getString(
+                    R.string.pref_default_value_custom_search_engine_url_format));
+        }
+        return urlFormat;
+    }
+
+    @NonNull
+    static String getSearchEngineUrlFormat(@NonNull Context context) {
+        final String[] urlFormats = context.getResources().getStringArray(
                 R.array.config_search_engine_url_formats);
-        final int index = Integer.parseInt(PreferenceManager.getDefaultSharedPreferences(this)
-                .getString(getString(R.string.pref_key_search_engine), getString(
+        final int index = Integer.parseInt(getSharedPreferences(context).getString(
+                context.getString(R.string.pref_key_search_engine), context.getString(
                         R.string.pref_default_value_search_engine)));
         return urlFormats[index];
     }
@@ -119,8 +131,17 @@ public class WebSearchActivity extends Activity {
     }
 
     private boolean shouldUseCustomTabs() {
-        return PreferenceManager.getDefaultSharedPreferences(this).getBoolean(
-                getString(R.string.pref_key_use_custom_tabs), getResources().getBoolean(
-                        R.bool.pref_default_value_use_custom_tabs));
+        return getSharedPreferences().getBoolean(getString(R.string.pref_key_use_custom_tabs),
+                getResources().getBoolean(R.bool.pref_default_value_use_custom_tabs));
+    }
+
+    @NonNull
+    private SharedPreferences getSharedPreferences() {
+        return getSharedPreferences(this);
+    }
+
+    @NonNull
+    private static SharedPreferences getSharedPreferences(@NonNull Context context) {
+        return PreferenceManager.getDefaultSharedPreferences(context);
     }
 }

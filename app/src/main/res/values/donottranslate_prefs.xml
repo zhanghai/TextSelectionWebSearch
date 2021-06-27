@@ -11,11 +11,16 @@
     <string-array name="pref_entry_values_search_engine">
         <item>0</item>
         <item>1</item>
-        <item>2</item>
+        <item>6</item>
         <item>3</item>
+        <item>7</item>
+        <item>2</item>
         <item>4</item>
         <item>5</item>
+        <item>8</item>
     </string-array>
+    <string name="pref_key_custom_search_engine_url_format">key_custom_search_engine_url_format</string>
+    <string name="pref_default_value_custom_search_engine_url_format">https://www.google.com/search?q=%s</string>
     <string name="pref_key_use_custom_tabs">key_use_custom_tabs</string>
     <bool name="pref_default_value_use_custom_tabs">true</bool>
     <string name="pref_key_open_url">key_open_url</string>

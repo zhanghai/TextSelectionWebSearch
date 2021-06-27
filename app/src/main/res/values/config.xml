@@ -5,7 +5,8 @@
   ~ All Rights Reserved.
   -->
 
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- @see https://chromium.googlesource.com/chromium/src/+/main/components/search_engines/prepopulated_engines.json -->
     <string-array name="config_search_engine_url_formats">
         <item>https://www.google.com/search?q=%s</item>
         <item>https://www.bing.com/search?q=%s</item>
@@ -13,5 +14,10 @@
         <item>https://www.baidu.com/s?wd=%s</item>
         <item>https://www.sogou.com/web?query=%s</item>
         <item>https://www.so.com/s?q=%s"</item>
+        <item>@string/config_yahoo_url_format</item>
+        <item>@string/config_yandex_url_format</item>
+        <item />
     </string-array>
+    <string name="config_yahoo_url_format" tools:ignore="MissingTranslation">https://search.yahoo.com/search?p=%s</string>
+    <string name="config_yandex_url_format" tools:ignore="MissingTranslation">https://yandex.com/search/?text=%s</string>
 </resources>

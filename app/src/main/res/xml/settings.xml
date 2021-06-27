@@ -15,6 +15,12 @@
         android:entryValues="@array/pref_entry_values_search_engine"
         android:summary="@string/settings_search_engine_summary" />
 
+    <me.zhanghai.android.textselectionwebsearch.EditTextPreferenceCompat
+        android:key="@string/pref_key_custom_search_engine_url_format"
+        android:title="@string/settings_custom_search_engine_url_format_title"
+        android:defaultValue="@string/pref_default_value_custom_search_engine_url_format"
+        android:summary="@string/settings_custom_search_engine_url_format_summary" />
+
     <SwitchPreference
         android:key="@string/pref_key_use_custom_tabs"
         android:title="@string/settings_use_custom_tabs_title"
