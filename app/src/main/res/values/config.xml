@@ -7,7 +7,7 @@
 
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- @see https://chromium.googlesource.com/chromium/src/+/main/components/search_engines/prepopulated_engines.json -->
-    <string-array name="config_search_engine_url_formats">
+    <string-array name="config_search_engine_url_formats" translatable="false">
         <item>https://www.google.com/search?q=%s</item>
         <item>https://www.bing.com/search?q=%s</item>
         <item>https://duckduckgo.com/?q=%s</item>
