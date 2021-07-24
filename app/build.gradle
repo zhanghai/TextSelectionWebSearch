@@ -27,11 +27,11 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.annotation:annotation:1.2.0'
     implementation ('androidx.browser:browser:1.3.0') {
         exclude group: 'androidx.collection'
         exclude group: 'androidx.lifecycle'
         exclude group: 'androidx.versionedparcelable'
         exclude group: 'com.google.guava'
     }
-    implementation 'androidx.annotation:annotation:1.2.0'
 }
