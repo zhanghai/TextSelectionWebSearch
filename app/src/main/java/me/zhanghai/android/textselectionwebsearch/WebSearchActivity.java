@@ -99,7 +99,7 @@ public class WebSearchActivity extends Activity {
         final String settingsDescription = getString(R.string.settings_title);
         final PendingIntent settingsPendingIntent = PendingIntent.getActivity(this,
                 SettingsActivity.class.hashCode(), new Intent(this, SettingsActivity.class),
-                PendingIntent.FLAG_UPDATE_CURRENT);
+                PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
         final CustomTabsIntent intent = new CustomTabsIntent.Builder()
                 .setActionButton(settingsIcon, settingsDescription, settingsPendingIntent, true)
                 .setColorScheme(CustomTabsIntent.COLOR_SCHEME_SYSTEM)
