@@ -1,10 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!--
-  ~ Copyright (c) 2021 Hai Zhang <dreaming.in.code.zh@gmail.com>
+  ~ Copyright (c) 2018 Hai Zhang <dreaming.in.code.zh@gmail.com>
   ~ All Rights Reserved.
   -->
 
 <resources>
-    <string name="web_search_title">"網頁搜尋"</string>
+
+    <!-- android.R.string.app_not_found -->
+    <string name="activity_not_found">找不到可執行這項操作的應用程式</string>
+
+    <string name="app_name">搜尋選取文字</string>
+
+    <!-- 改成相似詞，和某些瀏覽器內建選單做區別 -->
+    <string name="web_search_title">搜尋網站</string>
+
+    <string name="settings_title">設定</string>
+    <string name="settings_search_engine_title">搜尋引擎</string>
+
+    <string-array name="settings_search_engine_entries">
+        <item>Google</item>
+        <item>Bing</item>
+        <item>Yahoo!</item>
+        <item>百度</item>
+        <item>Yandex</item>
+        <item>DuckDuckGo</item>
+        <item>搜狗</item>
+        <item>360</item>
+        <item>自訂</item>
+    </string-array>
+    <string name="settings_custom_search_engine_url_format_title">自訂搜尋引擎 URL</string>
+    <string name="settings_use_custom_tabs_title">使用附帶網頁介面</string>
+    <string name="settings_use_custom_tabs_summary">更快速的搜尋體驗</string>
+    <string name="settings_open_url_title">開啟連結</string>
+    <string name="settings_open_url_summary">搜尋內容為 URL 時直接進入網站</string>
 </resources>
