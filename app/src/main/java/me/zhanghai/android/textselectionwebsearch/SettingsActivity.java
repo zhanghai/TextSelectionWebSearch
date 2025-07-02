@@ -21,7 +21,6 @@ import java.util.Objects;
 public class SettingsActivity extends PreferenceActivity
         implements SharedPreferences.OnSharedPreferenceChangeListener {
 
-    @NonNull
     private Preference mCustomSearchEngineUrlFormatPreference;
 
     @Override
@@ -43,7 +42,7 @@ public class SettingsActivity extends PreferenceActivity
 
     @Override
     public void onSharedPreferenceChanged(@NonNull SharedPreferences sharedPreferences,
-                                          @NonNull String key) {
+                                          @Nullable String key) {
         if (Objects.equals(key, getString(R.string.pref_key_search_engine))) {
             updateCustomSearchEngineUrlFormatPreferenceVisibility();
         }

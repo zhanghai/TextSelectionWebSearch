@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.StyleRes;
 
+@SuppressWarnings("deprecation")
 public class EditTextPreferenceCompat extends EditTextPreference {
 
     private boolean mTextSetCompat;

@@ -141,6 +141,7 @@ public class WebSearchActivity extends Activity {
     }
 
     @NonNull
+    @SuppressWarnings("deprecation")
     private static SharedPreferences getSharedPreferences(@NonNull Context context) {
         return PreferenceManager.getDefaultSharedPreferences(context);
     }
