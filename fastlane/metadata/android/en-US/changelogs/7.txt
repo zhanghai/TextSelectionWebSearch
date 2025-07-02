@@ -1,0 +1,1 @@
+- Updated app to target Android 16.
