@@ -43,7 +43,7 @@ public class SettingsActivity extends PreferenceActivity
     @Override
     public void onSharedPreferenceChanged(@NonNull SharedPreferences sharedPreferences,
                                           @Nullable String key) {
-        if (Objects.equals(key, getString(R.string.pref_key_search_engine))) {
+        if (Objects.equals(key, getString(R.string.pref_key_search_engine)) || key == null) {
             updateCustomSearchEngineUrlFormatPreferenceVisibility();
         }
     }
