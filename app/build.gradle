@@ -4,12 +4,12 @@ apply from: '../signing.gradle'
 
 android {
     namespace 'me.zhanghai.android.textselectionwebsearch'
-    compileSdk 34
-    buildToolsVersion = '34.0.0'
+    buildToolsVersion = '36.0.0'
+    compileSdk 36
     defaultConfig {
         applicationId 'me.zhanghai.android.textselectionwebsearch'
         minSdk 23
-        targetSdk 34
+        targetSdk 36
         versionCode 6
         versionName '1.1.2'
     }
@@ -28,11 +28,12 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.annotation:annotation:1.6.0'
-    implementation ('androidx.browser:browser:1.6.0') {
+    implementation 'androidx.annotation:annotation:1.9.1'
+    implementation ('androidx.browser:browser:1.8.0') {
         exclude group: 'androidx.collection'
         exclude group: 'androidx.lifecycle'
         exclude group: 'androidx.versionedparcelable'
         exclude group: 'com.google.guava'
+        exclude group: 'org.jetbrains.kotlin'
     }
 }
