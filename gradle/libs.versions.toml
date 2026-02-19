@@ -1,0 +1,15 @@
+[versions]
+android-buildTools = "36.1.0"
+android-compileSdk = "36"
+android-gradlePlugin = "9.0.1"
+android-minSdk = "23"
+android-targetSdk = "36"
+androidx-annotation = "1.9.1"
+androidx-browser = "1.8.0"
+
+[libraries]
+androidx-annotation = { group = "androidx.annotation", name = "annotation", version.ref = "androidx-annotation" }
+androidx-browser = { group = "androidx.browser", name = "browser", version.ref = "androidx-browser" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "android-gradlePlugin" }
